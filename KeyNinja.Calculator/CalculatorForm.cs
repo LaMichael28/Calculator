@@ -33,7 +33,8 @@ namespace KeyNinja.Calculator
             }
         }
 
-        private void Operation_Click(object sender, System.EventArgs e) {
+        private void Operation_Click(object sender, System.EventArgs e)
+        {
 
             var control = sender as Button;
             var value = txtResultValue.Text;
@@ -44,7 +45,8 @@ namespace KeyNinja.Calculator
                 case "NumberType":          
                 case "BasicOperationType":  
                 case "Point":               
-                case "Porcentage":          if (calculator.ValidateOperation(value, control.Text)) {
+                case "Porcentage":          if (calculator.ValidateOperation(value, control.Text))
+                                            {
                                                 value += control.Text;
                                             }
                                             break;
