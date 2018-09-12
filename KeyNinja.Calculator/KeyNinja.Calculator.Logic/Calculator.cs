@@ -9,6 +9,8 @@ namespace KeyNinja.Calculator.Logic
 {
     public class StandardCalculator : ICalculator
     {
+        private readonly string[] operators = { "+", "-", "x", "/" };
+
         public float Add(float val1, float val2)
         {
             return val1 + val2;
@@ -29,9 +31,29 @@ namespace KeyNinja.Calculator.Logic
             return val1 / val2;
         }
 
-        public string ValidateOperation(string operation, string newOperand)
+        public bool ValidateOperation(string operation, string newOperand)
         {
-            throw new NotImplementedException();
+            bool valid = true;
+            int result = 0;
+            var last = String.IsNullOrEmpty(operation) ? "" : operation.Last().ToString();
+            
+            if (operators.Contains(newOperand) || newOperand == "." || newOperand == "%")
+            {
+                if (!(Int32.TryParse(last, out result) || (last == "%" && newOperand != "%")))
+                {
+                    valid = false;
+                }
+            }
+            else
+            {
+                if (! (Int32.TryParse(newOperand, out result) && (operators.Contains(last) || Int32.TryParse(last, out result) || 
+                    last == "." || last == string.Empty)))
+                {
+                    valid = false;
+                }
+            }
+
+            return valid;
         }
 
         public float ProcessOperation(string operation)

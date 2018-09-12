@@ -19,7 +19,6 @@ namespace KeyNinja.Calculator
         public CalculatorForm()
         {
             InitializeComponent();
-
             AddEvents();
         }
 
@@ -38,18 +37,22 @@ namespace KeyNinja.Calculator
 
             var control = sender as Button;
             var value = txtResultValue.Text;
-            bool clearResult = false;
+            bool clearResult = false, clearLast = false;
 
             switch (control.Tag.ToString())
             {
                 case "NumberType":          
                 case "BasicOperationType":  
                 case "Point":               
-                case "Porcentage":          value = calculator.ValidateOperation(value, control.Text);
+                case "Porcentage":          if (calculator.ValidateOperation(value, control.Text)) {
+                                                value += control.Text;
+                                            }
                                             break;
                 case "Equal":               value = calculator.ProcessOperation(value).ToString();
                                             break;
                 case "Clear":               clearResult = true;
+                                            break;
+                case "ClearLast":           clearLast = true;
                                             break;
             }
 
@@ -59,7 +62,14 @@ namespace KeyNinja.Calculator
             }
             else
             {
-                txtResultValue.Text = value;
+                if (clearLast && value.Length > 0)
+                {
+                    txtResultValue.Text = value.Substring(0, value.Length - 1);
+                }
+                else
+                {
+                    txtResultValue.Text = value;
+                }
             }
         }
     }

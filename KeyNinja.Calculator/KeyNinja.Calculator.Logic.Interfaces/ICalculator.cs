@@ -12,7 +12,7 @@ namespace KeyNinja.Calculator.Logic.Interfaces
         float Substract(float val1, float val2);
         float Divide(float val1, float val2);
         float Multiply(float val1, float val2);
-        string ValidateOperation(string operation, string newOperand);
+        bool ValidateOperation(string operation, string newOperand);
         float ProcessOperation(string operation);
     }
 }

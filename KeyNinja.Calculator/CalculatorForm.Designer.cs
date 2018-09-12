@@ -218,13 +218,13 @@
             // 
             // btnMultiplication
             // 
-            this.btnMultiplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMultiplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMultiplication.Location = new System.Drawing.Point(378, 55);
             this.btnMultiplication.Name = "btnMultiplication";
             this.btnMultiplication.Size = new System.Drawing.Size(119, 46);
             this.btnMultiplication.TabIndex = 7;
             this.btnMultiplication.Tag = "BasicOperationType";
-            this.btnMultiplication.Text = "X";
+            this.btnMultiplication.Text = "x";
             this.btnMultiplication.UseVisualStyleBackColor = true;
             // 
             // btn9
@@ -281,14 +281,13 @@
             // 
             // btnClearE
             // 
-            this.btnClearE.Enabled = false;
             this.btnClearE.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClearE.Location = new System.Drawing.Point(128, 3);
             this.btnClearE.Name = "btnClearE";
             this.btnClearE.Size = new System.Drawing.Size(119, 46);
             this.btnClearE.TabIndex = 1;
-            this.btnClearE.Tag = "Clear";
-            this.btnClearE.Text = "CE";
+            this.btnClearE.Tag = "ClearLast";
+            this.btnClearE.Text = "[X]";
             this.btnClearE.UseVisualStyleBackColor = true;
             // 
             // btnPorcentage
