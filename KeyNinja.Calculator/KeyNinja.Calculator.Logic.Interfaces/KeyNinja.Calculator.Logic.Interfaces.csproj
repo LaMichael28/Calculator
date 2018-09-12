@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C6FA90B5-0132-4481-8444-F61EA41C7947}</ProjectGuid>
+    <ProjectGuid>{E3343F85-EFBC-4A95-A705-21155CD77FA5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KeyNinja.Calculator.Logic</RootNamespace>
-    <AssemblyName>KeyNinja.Calculator.Logic</AssemblyName>
+    <RootNamespace>KeyNinja.Calculator.Logic.Interfaces</RootNamespace>
+    <AssemblyName>KeyNinja.Calculator.Logic.Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,14 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
+    <Compile Include="ICalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\KeyNinja.Calculator.Logic.Interfaces\KeyNinja.Calculator.Logic.Interfaces.csproj">
-      <Project>{e3343f85-efbc-4a95-a705-21155cd77fa5}</Project>
-      <Name>KeyNinja.Calculator.Logic.Interfaces</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

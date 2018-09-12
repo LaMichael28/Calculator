@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyNinja.Calculator", "KeyNinja.Calculator.csproj", "{1F220724-2CD2-459D-9467-BF5B167DF591}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyNinja.Calculator.UnitTests", "..\KeyNinja.Calculator.UnitTests\KeyNinja.Calculator.UnitTests.csproj", "{D32F9BBD-9593-4E9B-B7CE-A4FDB628C035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyNinja.Calculator.Logic", "KeyNinja.Calculator.Logic\KeyNinja.Calculator.Logic.csproj", "{C6FA90B5-0132-4481-8444-F61EA41C7947}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyNinja.Calculator.Logic.Interfaces", "KeyNinja.Calculator.Logic.Interfaces\KeyNinja.Calculator.Logic.Interfaces.csproj", "{E3343F85-EFBC-4A95-A705-21155CD77FA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{1F220724-2CD2-459D-9467-BF5B167DF591}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F220724-2CD2-459D-9467-BF5B167DF591}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F220724-2CD2-459D-9467-BF5B167DF591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D32F9BBD-9593-4E9B-B7CE-A4FDB628C035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32F9BBD-9593-4E9B-B7CE-A4FDB628C035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32F9BBD-9593-4E9B-B7CE-A4FDB628C035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32F9BBD-9593-4E9B-B7CE-A4FDB628C035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6FA90B5-0132-4481-8444-F61EA41C7947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6FA90B5-0132-4481-8444-F61EA41C7947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6FA90B5-0132-4481-8444-F61EA41C7947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6FA90B5-0132-4481-8444-F61EA41C7947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3343F85-EFBC-4A95-A705-21155CD77FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3343F85-EFBC-4A95-A705-21155CD77FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3343F85-EFBC-4A95-A705-21155CD77FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3343F85-EFBC-4A95-A705-21155CD77FA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

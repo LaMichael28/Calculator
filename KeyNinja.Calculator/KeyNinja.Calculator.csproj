@@ -80,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="KeyNinja.Calculator.Logic.Interfaces\KeyNinja.Calculator.Logic.Interfaces.csproj">
+      <Project>{e3343f85-efbc-4a95-a705-21155cd77fa5}</Project>
+      <Name>KeyNinja.Calculator.Logic.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="KeyNinja.Calculator.Logic\KeyNinja.Calculator.Logic.csproj">
       <Project>{c6fa90b5-0132-4481-8444-f61ea41c7947}</Project>
       <Name>KeyNinja.Calculator.Logic</Name>

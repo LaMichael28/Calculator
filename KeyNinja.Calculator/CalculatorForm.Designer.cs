@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tblOperationsContainer = new System.Windows.Forms.TableLayoutPanel();
             this.btnEqual = new System.Windows.Forms.Button();
             this.btnPoint = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
@@ -50,46 +50,46 @@
             this.btnClearE = new System.Windows.Forms.Button();
             this.btnPorcentage = new System.Windows.Forms.Button();
             this.txtResultValue = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tblOperationsContainer.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // tblOperationsContainer
             // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.btnEqual, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.btnPoint, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.btn0, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.btnSignChange, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.btnAdd, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btn3, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btn2, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btn1, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnSubstract, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btn6, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btn5, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btn4, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btnMultiplication, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btn9, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btn8, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btn7, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnDivision, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnClear, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnClearE, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnPorcentage, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 79);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(500, 260);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tblOperationsContainer.ColumnCount = 4;
+            this.tblOperationsContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tblOperationsContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tblOperationsContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tblOperationsContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tblOperationsContainer.Controls.Add(this.btnEqual, 3, 4);
+            this.tblOperationsContainer.Controls.Add(this.btnPoint, 2, 4);
+            this.tblOperationsContainer.Controls.Add(this.btn0, 1, 4);
+            this.tblOperationsContainer.Controls.Add(this.btnSignChange, 0, 4);
+            this.tblOperationsContainer.Controls.Add(this.btnAdd, 3, 3);
+            this.tblOperationsContainer.Controls.Add(this.btn3, 2, 3);
+            this.tblOperationsContainer.Controls.Add(this.btn2, 1, 3);
+            this.tblOperationsContainer.Controls.Add(this.btn1, 0, 3);
+            this.tblOperationsContainer.Controls.Add(this.btnSubstract, 3, 2);
+            this.tblOperationsContainer.Controls.Add(this.btn6, 2, 2);
+            this.tblOperationsContainer.Controls.Add(this.btn5, 1, 2);
+            this.tblOperationsContainer.Controls.Add(this.btn4, 0, 2);
+            this.tblOperationsContainer.Controls.Add(this.btnMultiplication, 3, 1);
+            this.tblOperationsContainer.Controls.Add(this.btn9, 2, 1);
+            this.tblOperationsContainer.Controls.Add(this.btn8, 1, 1);
+            this.tblOperationsContainer.Controls.Add(this.btn7, 0, 1);
+            this.tblOperationsContainer.Controls.Add(this.btnDivision, 3, 0);
+            this.tblOperationsContainer.Controls.Add(this.btnClear, 2, 0);
+            this.tblOperationsContainer.Controls.Add(this.btnClearE, 1, 0);
+            this.tblOperationsContainer.Controls.Add(this.btnPorcentage, 0, 0);
+            this.tblOperationsContainer.Location = new System.Drawing.Point(12, 79);
+            this.tblOperationsContainer.Name = "tblOperationsContainer";
+            this.tblOperationsContainer.RowCount = 5;
+            this.tblOperationsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblOperationsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblOperationsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblOperationsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblOperationsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblOperationsContainer.Size = new System.Drawing.Size(500, 260);
+            this.tblOperationsContainer.TabIndex = 0;
             // 
             // btnEqual
             // 
@@ -98,6 +98,7 @@
             this.btnEqual.Name = "btnEqual";
             this.btnEqual.Size = new System.Drawing.Size(119, 46);
             this.btnEqual.TabIndex = 19;
+            this.btnEqual.Tag = "Equal";
             this.btnEqual.Text = "=";
             this.btnEqual.UseVisualStyleBackColor = true;
             // 
@@ -108,6 +109,7 @@
             this.btnPoint.Name = "btnPoint";
             this.btnPoint.Size = new System.Drawing.Size(119, 46);
             this.btnPoint.TabIndex = 18;
+            this.btnPoint.Tag = "Point";
             this.btnPoint.Text = ".";
             this.btnPoint.UseVisualStyleBackColor = true;
             // 
@@ -117,6 +119,7 @@
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(119, 46);
             this.btn0.TabIndex = 17;
+            this.btn0.Tag = "NumberType";
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
             // 
@@ -138,6 +141,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(119, 46);
             this.btnAdd.TabIndex = 15;
+            this.btnAdd.Tag = "BasicOperationType";
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
@@ -147,6 +151,7 @@
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(119, 46);
             this.btn3.TabIndex = 14;
+            this.btn3.Tag = "NumberType";
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
             // 
@@ -156,6 +161,7 @@
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(119, 46);
             this.btn2.TabIndex = 13;
+            this.btn2.Tag = "NumberType";
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
             // 
@@ -165,6 +171,7 @@
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(119, 46);
             this.btn1.TabIndex = 12;
+            this.btn1.Tag = "NumberType";
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
             // 
@@ -175,6 +182,7 @@
             this.btnSubstract.Name = "btnSubstract";
             this.btnSubstract.Size = new System.Drawing.Size(119, 46);
             this.btnSubstract.TabIndex = 11;
+            this.btnSubstract.Tag = "BasicOperationType";
             this.btnSubstract.Text = "-";
             this.btnSubstract.UseVisualStyleBackColor = true;
             // 
@@ -184,6 +192,7 @@
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(119, 46);
             this.btn6.TabIndex = 10;
+            this.btn6.Tag = "NumberType";
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
             // 
@@ -193,6 +202,7 @@
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(119, 46);
             this.btn5.TabIndex = 9;
+            this.btn5.Tag = "NumberType";
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
             // 
@@ -202,6 +212,7 @@
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(119, 46);
             this.btn4.TabIndex = 8;
+            this.btn4.Tag = "NumberType";
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
             // 
@@ -212,6 +223,7 @@
             this.btnMultiplication.Name = "btnMultiplication";
             this.btnMultiplication.Size = new System.Drawing.Size(119, 46);
             this.btnMultiplication.TabIndex = 7;
+            this.btnMultiplication.Tag = "BasicOperationType";
             this.btnMultiplication.Text = "X";
             this.btnMultiplication.UseVisualStyleBackColor = true;
             // 
@@ -221,6 +233,7 @@
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(119, 46);
             this.btn9.TabIndex = 6;
+            this.btn9.Tag = "NumberType";
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
             // 
@@ -230,6 +243,7 @@
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(119, 46);
             this.btn8.TabIndex = 5;
+            this.btn8.Tag = "NumberType";
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
             // 
@@ -239,6 +253,7 @@
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(119, 46);
             this.btn7.TabIndex = 4;
+            this.btn7.Tag = "NumberType";
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
             // 
@@ -249,6 +264,7 @@
             this.btnDivision.Name = "btnDivision";
             this.btnDivision.Size = new System.Drawing.Size(119, 46);
             this.btnDivision.TabIndex = 3;
+            this.btnDivision.Tag = "BasicOperationType";
             this.btnDivision.Text = "/";
             this.btnDivision.UseVisualStyleBackColor = true;
             // 
@@ -259,6 +275,7 @@
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(119, 46);
             this.btnClear.TabIndex = 2;
+            this.btnClear.Tag = "Clear";
             this.btnClear.Text = "C";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
@@ -270,6 +287,7 @@
             this.btnClearE.Name = "btnClearE";
             this.btnClearE.Size = new System.Drawing.Size(119, 46);
             this.btnClearE.TabIndex = 1;
+            this.btnClearE.Tag = "Clear";
             this.btnClearE.Text = "CE";
             this.btnClearE.UseVisualStyleBackColor = true;
             // 
@@ -280,6 +298,7 @@
             this.btnPorcentage.Name = "btnPorcentage";
             this.btnPorcentage.Size = new System.Drawing.Size(119, 46);
             this.btnPorcentage.TabIndex = 0;
+            this.btnPorcentage.Tag = "Porcentage";
             this.btnPorcentage.Text = "%";
             this.btnPorcentage.UseVisualStyleBackColor = true;
             // 
@@ -299,10 +318,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 348);
             this.Controls.Add(this.txtResultValue);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tblOperationsContainer);
             this.Name = "CalculatorForm";
             this.Text = "Calculator";
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tblOperationsContainer.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,7 +329,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tblOperationsContainer;
         private System.Windows.Forms.Button btnPorcentage;
         private System.Windows.Forms.Button btnEqual;
         private System.Windows.Forms.Button btnPoint;
