@@ -53,6 +53,12 @@
     <Compile Include="CalculatorTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KeyNinja.Calculator\KeyNinja.Calculator.Logic\KeyNinja.Calculator.Logic.csproj">
+      <Project>{c6fa90b5-0132-4481-8444-f61ea41c7947}</Project>
+      <Name>KeyNinja.Calculator.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

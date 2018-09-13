@@ -71,7 +71,7 @@ namespace KeyNinja.Calculator.Logic
             LinkedList<double> operands = new LinkedList<double>();
             var last = String.IsNullOrEmpty(operation) ? "" : operation.Last().ToString();
 
-            if (IsOperator(last) || last == "%" || last == ".")
+            if (IsOperator(last) || last == ".")
             {
                 op = operation.Substring(0, operation.Length - 1);
             }
