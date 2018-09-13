@@ -76,9 +76,9 @@ namespace KeyNinja.Calculator.Logic
                 op = operation.Substring(0, operation.Length - 1);
             }
 
-            for (var i = 0; i < operation.Length; i++)
+            for (var i = 0; i < op.Length; i++)
             {
-                var value = operation[i];
+                var value = op[i];
                 string val = value.ToString();
 
                 if (IsNumeric(val) || val == ".")
