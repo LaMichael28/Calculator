@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using KeyNinja.Calculator.Logic.Interfaces;
+using Ninject;
+using System;
 using System.Windows.Forms;
 
 namespace KeyNinja.Calculator
@@ -16,7 +15,9 @@ namespace KeyNinja.Calculator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CalculatorForm());
+            IKernel kernel = new StandardKernel(new CalculatorModule());
+            ICalculator calculator = kernel.Get<ICalculator>();
+            Application.Run(new CalculatorForm(calculator));
         }
     }
 }

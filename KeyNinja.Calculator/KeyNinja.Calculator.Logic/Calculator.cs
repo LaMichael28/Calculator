@@ -1,10 +1,7 @@
 ﻿using KeyNinja.Calculator.Logic.Interfaces;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KeyNinja.Calculator.Logic
 {
@@ -19,6 +16,11 @@ namespace KeyNinja.Calculator.Logic
 
         public double Divide(double val1, double val2)
         {
+            if (val2 == 0)
+            {
+                throw new DivideByZeroException();
+            }
+
             return val1 / val2;
         }
 
@@ -69,7 +71,7 @@ namespace KeyNinja.Calculator.Logic
             LinkedList<double> operands = new LinkedList<double>();
             var last = String.IsNullOrEmpty(operation) ? "" : operation.Last().ToString();
 
-            if (operators.Contains(last) || last == "%" || last == ".")
+            if (IsOperator(last) || last == "%" || last == ".")
             {
                 op = operation.Substring(0, operation.Length - 1);
             }

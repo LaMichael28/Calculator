@@ -1,23 +1,18 @@
 ﻿using KeyNinja.Calculator.Logic.Interfaces;
+using Ninject;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using KeyNinja.Calculator.Logic;
 
 namespace KeyNinja.Calculator
 {
     public partial class CalculatorForm : Form
     {
-        private ICalculator calculator = new StandardCalculator();
+        private ICalculator calculator;
 
-        public CalculatorForm()
+        [Inject]
+        public CalculatorForm(ICalculator calculator)
         {
+            this.calculator = calculator;
             InitializeComponent();
             AddEvents();
         }
@@ -50,7 +45,14 @@ namespace KeyNinja.Calculator
                                                 value += control.Text;
                                             }
                                             break;
-                case "Equal":               value = calculator.ProcessOperation(value).ToString();
+                case "Equal":               try
+                                            {
+                                                value = calculator.ProcessOperation(value).ToString();
+                                            }
+                                            catch (DivideByZeroException)
+                                            {
+                                                value = "ERR";
+                                            }
                                             break;
                 case "Clear":               clearResult = true;
                                             break;
