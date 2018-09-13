@@ -98,7 +98,7 @@ namespace KeyNinja.Calculator.Logic
                     operand = string.Empty;
                 }
 
-                if (i == operation.Length - 1)
+                if (i == op.Length - 1)
                 {
                     operands.AddLast(double.Parse(operand));
                 }
